@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg,#fdfbd5ed,#faedcd,#fefae0);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  margin-bottom: 30px;
+}
+
+.form, .search {
+  margin: 20px auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  background: #f7a900fe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+#results {
+  margin-top: 40px;
+  display: grid;
+  gap: 18px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* 卡片樣式 */
+.message-card {
+  padding: 18px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: floatUp 0.4s ease;
+}
+
+
+/* Dear名字 */
+.recipient {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* 訊息文字 */
+.message-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #222;
+}
+
+
+/* 時間 */
+.time {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 12px;
+  opacity: 0.7;
+}
+
+
+/* 動畫 */
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.textarea-wrapper {
+  position: relative;
+}
+
+.textarea-wrapper textarea {
+  width: 100%;
+  padding: 12px;
+  padding-bottom: 50px; /* 預留按鈕空間 */
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+.color-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+.color-btn input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.form input,
+.form textarea,
+.form button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+

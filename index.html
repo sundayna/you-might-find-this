@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Might Find This</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>You Might Find This</h1>
+
+  <div class="form">
+
+    <input type="text" id="recipient" placeholder="Enter a name (e.g. Emily)" />
+
+    <div class="textarea-wrapper">
+      <textarea id="message" placeholder="Write your message..."></textarea>
+
+      <label for="colorPicker" class="color-btn">
+        🎨
+        <input type="color" id="colorPicker" value="#ff7eb3">
+      </label>
+    </div>
+
+    <button id="sendBtn">Send</button>
+
+  </div>
+
+  <div class="search">
+    <input type="text" id="searchName" placeholder="Search your name..." />
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
